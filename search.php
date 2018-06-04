@@ -7,7 +7,7 @@ if (!isset($_SESSION['logged_in'])) {
       header('Location: index');
     }
     else {
-      $word = $_GET['searched'];
+      $word = addslashes($_GET['searched']);
     }
 }
 else {
@@ -17,7 +17,7 @@ else {
     header('Location: index');
   }
   else {
-    $word = $_GET['searched'];
+    $word = addslashes($_GET['searched']);
   }
 }
 
