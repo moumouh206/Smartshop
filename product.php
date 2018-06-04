@@ -13,7 +13,7 @@ else {
   $idsess = $_SESSION['id'];
 }
 
-$id_product =$_GET['id'];
+$id_product =addslashes($_GET['id']);
  require 'includes/header.php';
  require $nav;?>
 
