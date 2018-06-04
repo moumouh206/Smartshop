@@ -13,7 +13,7 @@ if(!isset($_GET['id'])){
 header('Location: index');
 }
 
-$id_category =$_GET['id'];
+$id_category =addslashes($_GET['id']);
  require 'includes/header.php';
  require $nav; ?>
  <div class="container-fluid product-page">
